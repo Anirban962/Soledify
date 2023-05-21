@@ -1,0 +1,834 @@
+/*=====Reset CSS======*/
+
+article,
+aside,
+canvas,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section,
+audio,
+video,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a,
+button,
+input,
+input[type="buttton"],
+input[type="submit"],
+select,
+.btn,
+textarea {
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    text-decoration: none !important;
+    font-style: normal;
+}
+
+a:focus,
+button:focus,
+input:focus,
+input[type="buttton"]:focus,
+input[type="submit"]:focus,
+select:focus,
+.btn:focus,
+textarea:focus,
+.bootstrap-select .dropdown-toggle:focus {
+    outline: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a,
+label,
+span {
+    display: inline-block;
+    vertical-align: middle;
+    vertical-align: 0;
+}
+
+figure {
+    -webkit-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+    margin: 0;
+    font-size: 0;
+    line-height: 100%;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #68717b;
+    background-color: #fff;
+    position: relative;
+}
+
+.svg_container {
+    display: none;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100%;
+}
+
+::-moz-selection {
+    background-color: #1f40cb;
+    color: #fff;
+}
+
+::selection {
+    background-color: #1f40cb;
+    color: #fff;
+}
+
+
+/*=====Reset CSS======*/
+
+
+/* Header */
+
+.header_outer {
+    width: 100%;
+    padding: 35px 0 0;
+    position: absolute;
+    z-index: 75;
+}
+
+.hddr_inr .logo {
+    max-width: 70px;
+}
+
+.hddr_inr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px 30px 20px 36px;
+    border-radius: 60px;
+}
+
+.hdr_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.hdr_menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.hdr_menu ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.hdr_menu ul li:last-child {
+    margin-right: 0;
+}
+
+.hdr_menu ul li:first-child {
+    margin-left: 0;
+}
+
+.hdr_menu ul li a {
+    display: block;
+    font-size: 16px;
+    color: #000;
+    font-weight: 300;
+    position: relative;
+}
+
+.hdr_menu ul li a::after {
+    content: ' ';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-image: linear-gradient(0deg, #dab638, #fcdf38);
+    left: 0;
+    bottom: -4px;
+    transition: all .5s;
+    opacity: 0;
+}
+
+.hdr_menu ul li a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.header_content {
+    display: flex;
+}
+
+.hddr_inr .navbar {
+    padding: 0;
+}
+
+.logo {
+    padding: 0;
+}
+
+.login_language_links {
+    display: flex;
+    margin-left: 25px;
+}
+
+.language_link {
+    position: relative;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.language_link select {
+    border: none;
+    color: #000;
+    font-weight: 300;
+    font-size: 16px;
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    transition: all 0s;
+    padding: 0 5px;
+    padding-right: 10px;
+}
+
+.language_link::after {
+    content: ' ';
+    position: absolute;
+    background-image: url(../images/dwn_arrow.png);
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    right: 0px;
+    background-repeat: no-repeat;
+    top: 27%;
+}
+
+.language_link:hover::after {
+    background-image: url(../images/dwn_arrow_hvr.png);
+}
+
+.language_link:hover select {
+    color: #d5b038;
+}
+
+.language_link select option {
+    border: none;
+    padding: 10px 0;
+}
+
+.login_language_links a {
+    display: flex;
+}
+
+.contact_us_btn a {
+    padding: 0 40px;
+    color: #000;
+    font-weight: 300;
+    margin-left: 20px;
+    position: relative;
+    transition: all 0s;
+}
+
+.contact_us_btn a::before {
+    content: ' ';
+    top: -15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 56px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, #d5b038, #ffe338) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact_us_btn a:hover {
+    color: #fff;
+    z-index: 5;
+}
+
+.contact_us_btn a:hover::before {
+    -webkit-mask: linear-gradient(transparent 0 0) padding-box, linear-gradient(#fff 0 0);
+    z-index: -1;
+}
+
+.login_language_links a p {
+    color: #000;
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 10px;
+    display: block;
+    transition: all .5s;
+}
+
+.login_language_links span {
+    height: 30px;
+    width: 1.5px;
+    background: #e7e7e7;
+    display: block;
+    margin: 0 15px;
+}
+
+.login_language_links a:hover p {
+    color: #ddba38;
+}
+
+
+/* Banner */
+
+.banner {
+    padding: 302px 0 342px;
+    background-image: url(../images/banner_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 55;
+}
+
+.banner_hdng_cntnt {
+    text-align: center;
+}
+
+.banner_hdng_cntnt h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #000;
+}
+
+.banner_hdng_cntnt p {
+    max-width: 900px;
+    margin: 35px auto;
+    color: #575757;
+    font-size: 16px;
+}
+
+.banner::after {
+    content: ' ';
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fadd38+0,f1d238+30,ddb938+73,d4af38+100 */
+    background: #fadd38;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #fadd38 0%, #f1d238 30%, #ddb938 73%, #d4af38 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fadd38 0%, #f1d238 30%, #ddb938 73%, #d4af38 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fadd38 0%, #f1d238 30%, #ddb938 73%, #d4af38 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fadd38', endColorstr='#d4af38', GradientType=0);
+    /* IE6-9 */
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* banner section ends */
+
+
+/* Marketing Condition starts */
+
+.market_condtion {
+    background: url(../images/shape_1.png), url(../images/mrkt_cndtin_shape_2.png);
+    background-repeat: no-repeat;
+    background-position: left 283px, right -14px;
+    padding: 525px 0 0px;
+    position: relative;
+    margin-top: -470px;
+}
+
+.universal_cntnr {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7f7ee+0,fffdf5+64,fffef5+100 */
+    background: rgb(247, 247, 238);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(247, 247, 238, 1) 0%, rgba(255, 253, 245, 1) 64%, rgba(255, 254, 245, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(247, 247, 238, 1) 0%, rgba(255, 253, 245, 1) 64%, rgba(255, 254, 245, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(247, 247, 238, 1) 0%, rgba(255, 253, 245, 1) 64%, rgba(255, 254, 245, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f7f7ee', endColorstr='#fffef5', GradientType=0);
+    /* IE6-9 */
+}
+
+.market_cntnt_details {
+    text-align: center;
+}
+
+.market_cntnt_details p {
+    font-size: 16px;
+    color: #575757;
+    max-width: 730px;
+    margin: 0 auto;
+}
+
+h2.hdng {
+    font-size: 44px;
+    color: #000;
+    font-weight: 800;
+    max-width: 805px;
+    margin: 30px auto 0;
+    text-transform: capitalize;
+    line-height: 55px;
+}
+
+
+/* Marketing Condition ends */
+
+
+/* Trading Bots section starts */
+
+.trading_bts {
+    padding: 115px 0 0px;
+    background: url(../images/trading_bots_tp_pc.png), url(../images/trading_bots_bg1.png), url(../images/trading_bots_bg2.png);
+    background-repeat: no-repeat;
+    background-position: top, left 536px, right 580px;
+    position: relative;
+    z-index: 50;
+    margin-top: 94px;
+    padding-bottom: 180px;
+    background-size: auto, 22%, auto;
+}
+
+.trading_bts_hdng {
+    text-align: center;
+}
+
+.slidr_cntnr {
+    margin-top: 52px;
+}
+
+.slidr_cntnr .sldr_cntnt .slidr_img {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(149 157 165 / 20%) 0px 5px 8px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+
+.slidr_cntnr .sldr_cntnt h3 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.slidr_cntnr .sldr_cntnt p {
+    font-size: 15px;
+    line-height: 28px;
+    color: #575757;
+    max-width: 220px;
+}
+
+.slidr_cntnr button.slick-arrow {
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #d9b645;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .5s;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slidr_cntnr button.slick-prev {
+    left: -8%;
+    background-image: url(../images/right_arrow.png);
+}
+
+.slidr_cntnr button.slick-prev:hover {
+    background-image: url(../images/right_arrow_hvr.png);
+    background-color: #e2c138;
+}
+
+.slidr_cntnr button.slick-next {
+    right: -8%;
+    background-image: url(../images/left_arrow.png);
+}
+
+.slidr_cntnr button.slick-next:hover {
+    background-image: url(../images/left_arrow_hvr.png);
+    background-color: #e2c138;
+}
+
+
+/* TRading Bots section ends */
+
+
+/* Competitive Edge section starts */
+
+.competitive_edge {
+    padding: 76px 0 165px;
+    background: url(../images/competive_edge_bg.png);
+    position: relative;
+    margin-top: -90px;
+    z-index: 52;
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.competitive_edge::before {
+    content: ' ';
+    position: absolute;
+    width: 2px;
+    height: 90px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fadd38+0,f1d238+30,ddb938+73,d4af38+100 */
+    background: #fadd38;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #fadd38 0%, #f1d238 30%, #ddb938 73%, #d4af38 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fadd38 0%, #f1d238 30%, #ddb938 73%, #d4af38 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fadd38 0%, #f1d238 30%, #ddb938 73%, #d4af38 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fadd38', endColorstr='#d4af38', GradientType=0);
+    /* IE6-9 */
+    top: -4%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.competitive_edge_hdng {
+    text-align: center;
+}
+
+.competitive_edge_hdng p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #5b5757;
+    max-width: 910px;
+    margin: 34px auto 0;
+}
+
+.competitive_content_cntnr {
+    background-color: #fff;
+    padding: 28px 10px 25px 17px;
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.competitive_content_cntnr::before {
+    content: ' ';
+    position: absolute;
+    background-image: url(../images/competive_edge_bg2.png);
+    width: 530px;
+    height: 420px;
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    left: -19.5%;
+    z-index: -1;
+    bottom: 0;
+}
+
+.competitive_edge::after {
+    content: ' ';
+    position: absolute;
+    width: 2px;
+    height: 90px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fadd38+0,f1d238+30,ddb938+73,d4af38+100 */
+    background: #fadd38;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #fadd38 0%, #f1d238 30%, #ddb938 73%, #d4af38 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fadd38 0%, #f1d238 30%, #ddb938 73%, #d4af38 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fadd38 0%, #f1d238 30%, #ddb938 73%, #d4af38 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fadd38', endColorstr='#d4af38', GradientType=0);
+    /* IE6-9 */
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.competitive_content_cntnr::after {
+    content: ' ';
+    position: absolute;
+    background-image: url(../images/competive_edge_bg3.png);
+    width: 600px;
+    height: 300px;
+    background-size: contain;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    right: -17.2%;
+    z-index: -1;
+    top: -10%;
+}
+
+.competitive_edge .col-md-10 {
+    margin: 0 auto;
+}
+
+.competitive_content .hamburger_arbitrage {
+    background: linear-gradient(to bottom, #d5b038, #f2d739);
+    padding: 39px 0 35px;
+    border-radius: 15px;
+}
+
+.competitive_content .hamburger_arbitrage h3 {
+    font-size: 24px;
+    line-height: 34px;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.competitive_content .hamburger_arbitrage img {
+    display: block;
+    margin: 35px auto 20px;
+}
+
+.competitive_content .hamburger_arbitrage span {
+    font-size: 16px;
+    line-height: 34px;
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+
+.competitive_content h4 {
+    font-size: 28px;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.competitive_content p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #5b5757;
+}
+
+
+/* Competitive Edge section ends */
+
+
+/* How Our Bot works section starts */
+
+.how_our_bot_hdng {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+.how_our_bot {
+    padding: 130px 0 475px;
+    background-image: linear-gradient(to bottom, #f4f3eb, #f4f3eb, #f8f7ec, #fbf8ec);
+    margin-top: -70px;
+    position: relative;
+}
+
+.how_our_bot::before {
+    content: ' ';
+    position: absolute;
+    background-image: url(../images/how_our_bot_bg3.png);
+    width: 280px;
+    height: 550px;
+    left: 0;
+    top: 452px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.how_our_bot_cntnr::before {
+    content: ' ';
+    position: absolute;
+    background-image: url(../images/how_our_bot_bg2.png);
+    width: 250px;
+    height: 310px;
+    left: 0;
+    bottom: 42px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.how_our_bot_cntnr::after {
+    content: ' ';
+    position: absolute;
+    background-image: url(../images/how_our_bot_bg.png);
+    width: 240px;
+    height: 800px;
+    right: 0;
+    bottom: 43%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.how_our_bot_img {
+    margin-top: 54px;
+}
+
+
+/* How Our Bot Works section ends */
+
+
+/* Footer Part starts */
+
+.ftr_sec {
+    padding: 354px 0 30px;
+    background-image: url(../images/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: unset;
+    margin-top: -410px;
+    position: relative;
+}
+
+.ftr_sec::before {
+    content: ' ';
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fadd38+0,f1d238+30,ddb938+73,d4af38+100 */
+    background: #fadd38;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #fadd38 0%, #f1d238 30%, #ddb938 73%, #d4af38 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fadd38 0%, #f1d238 30%, #ddb938 73%, #d4af38 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fadd38 0%, #f1d238 30%, #ddb938 73%, #d4af38 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fadd38', endColorstr='#d4af38', GradientType=0);
+    /* IE6-9 */
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ftr_logo {
+    max-width: 120px;
+}
+
+.ftr_hdng h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+}
+
+.ftr_li {
+    margin-top: 20px;
+}
+
+.ftr_li ul li a {
+    font-size: 14px;
+    color: #5b5757;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ftr_li ul li a:hover {
+    color: #000;
+}
+
+.ftr_li ul li .icon_img {
+    margin-right: 10px;
+}
+
+.ftr_li ul li {
+    margin-bottom: 24px;
+    display: flex;
+}
+
+.icon_img {
+    min-width: 30px;
+}
+
+.cpy_rgt_sec {
+    margin: 84px 0 0px;
+    border-top: 1px solid #cac9c0;
+}
+
+.cpy_rgt_sec span.text-center {
+    display: block;
+    font-size: 14px;
+    color: #5b5757;
+    margin-top: 20px;
+}
+
+
+/* Footer Part ends */
